@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSSW'1 - 1st National Space Science Workshop</title>
+    <style>
+        :root {
+            --primary-bg: #0b132b; /* Deep space blue */
+            --secondary-bg: #1c2541; /* Lighter blue */
+            --accent: #f5a623; /* Gold/Star color */
+            --text-main: #e0e1dd;
+            --text-light: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--secondary-bg);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(11, 19, 43, 0.8), rgba(11, 19, 43, 0.9)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop') center/cover;
+        }
+        .hero h1 {
+            color: var(--accent);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--primary-bg);
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h2.section-title {
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: var(--secondary-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .card h3 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #3a506b;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--secondary-bg);
+            color: var(--accent);
+        }
+        footer {
+            background-color: var(--secondary-bg);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#topics">Topics</a>
+            <a href="#dates">Important Dates</a>
+            <a href="#committees">Committees</a>
+            <a href="#registration">Registration</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>NSSW'1</h1>
+        <h2>1st National Space Science Workshop</h2>
+        <p>Organized by the Laboratory of Theoretical Physics and Didactics, Faculty of Physics</p>
+        <p><strong>USTHB | October 4 – 5, 2026</strong></p>
+        <a href="https://tinyurl.com/first-nssw" target="_blank" class="btn">Register Now</a>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">About the Workshop</h2>
+        <p>The aim of this first national workshop is to create a unique training and exchange platform, uniting academic communities and dedicated amateurs around an integrated vision of the field. Structured around plenary lectures covering astrophysics, astronomy, cosmology, space technology, and space weather, it is designed to break down disciplinary boundaries and stimulate the emergence of interdisciplinary synergies.</p>
+        <p>In collaboration with the <strong>Innovative Youth Association of Algiers (AJI)</strong> and <strong>Physica Club</strong>.</p>
+    </section>
+
+    <section id="topics">
+        <h2 class="section-title">Workshop Topics</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Astronomy</h3>
+                <p>Data acquisition through various telescopes, multi-wavelength astronomy, astrometry, photometry, and astrophotography.</p>
+            </div>
+            <div class="card">
+                <h3>Space Weather & Solar System</h3>
+                <p>Space Weather, Solar physics, solar/planetary magnetospheres, celestial mechanics, Solar system composition.</p>
+            </div>
+            <div class="card">
+                <h3>High Energy Astrophysics</h3>
+                <p>Thermo-nuclear astrophysics, cosmic rays, star formation structure and evolution.</p>
+            </div>
+            <div class="card">
+                <h3>Cosmology</h3>
+                <p>Universe formation and evolution, dark matter and dark energy, compact objects, gravitational waves.</p>
+            </div>
+            <div class="card">
+                <h3>Space Techniques & Data</h3>
+                <p>Remote sensing, orbital mechanics, atmospheric physics, spacecraft engineering, machine learning in astronomy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dates">
+        <h2 class="section-title">Important Dates</h2>
+        <ul>
+            <li><strong>Abstract Submission Deadline:</strong> June 30, 2026</li>
+            <li><strong>Notification of Acceptance:</strong> September 6, 2026</li>
+            <li><strong>Workshop Dates:</strong> October 4 - 5, 2026</li>
+        </ul>
+    </section>
+
+    <section id="committees">
+        <h2 class="section-title">Committees</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>General Management</h3>
+                <ul>
+                    <li><strong>Honorary Chairman:</strong> Moussaoui Nourredine</li>
+                    <li><strong>General Chairman:</strong> Marif Hanane</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Scientific Committee</h3>
+                <p><strong>President:</strong> Marif Hanane (USTHB)</p>
+                <ul>
+                    <li>Belhout Amel (USTHB)</li>
+                    <li>Ourabah Kamel (USTHB)</li>
+                    <li>Ouziane Souhila (USTHB)</li>
+                    <li>Attallah Reda (NSNN)</li>
+                    <li>Kali Sihem (UMB)</li>
+                    <li>Damardji Yacine (CRAAG)</li>
+                    <li>Nait Amor Samir (CRAAG)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Organizing Committee</h3>
+                <p><strong>President:</strong> Oudih Mohamed Reda (USTHB)</p>
+                <ul>
+                    <li>Cherfi Yacine (USTHB)</li>
+                    <li>Gallouze Malika (USTHB)</li>
+                    <li>Bani Hakim (AJI)</li>
+                    <li>...and dedicated faculty and students.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration">
+        <h2 class="section-title">Registration & Fees</h2>
+        <p>The conference is open to Magister/PhD Algerian researchers, young amateurs, non-profit organizations, and industrialists.</p>
+        <table>
+            <tr>
+                <th>Participant Category</th>
+                <th>Fee (DA)</th>
+            </tr>
+            <tr>
+                <td>PhD Students</td>
+                <td>1000 DA</td>
+            </tr>
+            <tr>
+                <td>Research Teachers</td>
+                <td>5000 DA</td>
+            </tr>
+            <tr>
+                <td>Industrials</td>
+                <td>10000 DA</td>
+            </tr>
+        </table>
+        <p style="margin-top: 20px;">
+            <strong>Contact:</strong> <a href="mailto:nssw.workshop@gmail.com" style="color: var(--accent);">nssw.workshop@gmail.com</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 First National Space Science Workshop (NSSW'1). All rights reserved.</p>
+        <p>Hosted at University of Science and Technology Houari Boumediene (USTHB), Algiers.</p>
+    </footer>
+
+</body>
+</html>
